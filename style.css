@@ -261,11 +261,17 @@ footer {
 } */ 
 
 /* ===== MOBILE / TABLET MENU ===== */
+.manzi {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
 .menu-toggle {
   display: none;
   font-size: 30px;
   cursor: pointer;
   color: #000;
+  margin-right: -130px;
 }
 
 /* Tablet & Mobile */
