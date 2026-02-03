@@ -9,24 +9,27 @@
 </head>
 <body>
 
-   
-    <header>
-        <nav class="navbar">
-            <div class="logo-img">
-            <div class="mama">
-            <img src="anacopy-removebg-preview.png" alt="" height="100px" width="100px">
-            </div>
-            </div>
-            <h1 class="logo"></h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+ <header>
+  <div class="navbar">
+    <h1 class="logo">
+      <img src="anacopy-removebg-preview.png" alt="Logo" class="logo-img">
+    </h1>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">☰</div>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   
     <section id="home" class="hero">
@@ -158,4 +161,13 @@ document.querySelectorAll(".skills-list li").forEach(skill => {
     });
 });
 
+
+
+
+const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 </script>
