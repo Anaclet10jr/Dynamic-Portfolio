@@ -11,6 +11,33 @@ body {
     color: #cdd5e4;
 }
 
+.responsive-img {
+  width: 600px;        /* fills container */
+  max-width: 800px;  /* desktop limit */
+  height: auto;      /* keeps aspect ratio */
+  display: block;
+  
+  margin-top: 50px;
+  margin-bottom: -100px;
+ 
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .responsive-img {
+    max-width: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 40px) {
+  .responsive-img {
+    max-width: 50%;
+  }
+}
+
+
 /* NAVBAR */
 header {
     position: sticky;
