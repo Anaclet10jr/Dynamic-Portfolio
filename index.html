@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anaclet | Portfolio</title>
+    <link rel="icon" href="anacopy-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <header>
+        <nav class="navbar">
+            <div class="logo-img">
+            <div class="mama">
+            <img src="anacopy-removebg-preview.png" alt="" height="100px" width="100px">
+            </div>
+            </div>
+            <h1 class="logo"></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <section id="home" class="hero">
+        <img src="" alt="">
+        <h2>Hello, I'm <span>Anaclet MUNYAWERA</span></h2>
+        <h2>My Career</h2>
+        <p>Network Administrator;<br> website and Web Application; <br>Aspiring Software Developer & IT Specialist</p>
+        <button>View My Work</button>
+    </section>
+
+  
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate IT student with strong skills in programming,
+            web development, and database management. I enjoy building
+            practical and professional digital solutions.
+        </p>
+        <section>
+        <div class="anatech">
+            <img src="AnaTech businss card.png" alt="" height="500px" width="800px">
+        </div>
+    </section>
+    </section>
+
+ 
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>C Programming</li>
+            <li>Database (SQL)</li>
+            <li>Git & GitHub</li>
+            <li>Computer Networking</li>
+            <li>Tech Conseilling</li>
+        </ul>
+    </section>
+    
+
+ 
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>School Management System</h3>
+            <p>Web-based system with admin and student dashboards.</p>
+        </div>
+
+        <div class="project-card">
+            
+            <h3>Personal Portfolio Website</h3>
+            <p>My professional portfolio website showcasing skills, projects, and contact info.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JS</p>
+            <a href="#" target="_blank" class="project-link">View Project</a>
+        </div>
+        
+         <div class="project-card">
+            <h3>Inventory Management System</h3>
+            <p>Desktop or web app for managing product stocks, suppliers, and orders efficiently.</p>
+            <p><strong>Tech:</strong> C Programming, SQL, PHP</p>
+            <a href="#" target="_blank" class="project-link">View Project</a>
+              
+        </div>
+
+         <div class="project-card">
+            <h3>Networking Setup Automation</h3>
+            <p>Scripts and tools to automate network configuration and monitoring tasks.</p>
+            <p><strong>Tech:</strong> Python, Bash, Networking</p>
+            <a href="#" target="_blank" class="project-link">View Project</a>
+
+           
+        </div>
+       
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+    
+        <p><img src="envelope-line-icon.png" alt="" height="20px" width="20px">Email:<a href="mailto:munyanaclet10@gmail.com">munyanaclet10@gmail.com</a></p>
+        <p><img src="phone-call_9946341.png" alt="" height="20px" width="20px">Tel:<a href="tel: +250794703700">+250 794 700 3700</a></p>
+        <p><img src="social_13051741.png" height="20px" width="20px">  Whatsapp:<a href="wa.me:0794703700">+250794703700</a></p>
+   <p><img src="x-social-media-logo-icon.png" alt="" height="20px" width="20px">Twitter/X:<a href="https://twitter.com" style="gap: 20px;" >anaclet_jr</a></p>
+   <p><img src="ig-instagram-icon.png" alt="" height="20px" width="20px">Instagram:<a href="https://instagram.com">anacletus_jr</a></p>
+   <p><img src="facebook-round-color-icon.png" alt="" height="20px" width="20px">Facebook:  <a href="https://facebook.com">anacletus.jr</a></p>
+     
+    </section>
+
+    <footer>
+        <p>© 2026 Anaclet. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<script>
+// Smooth scroll button
+document.querySelector("button").addEventListener("click", () => {
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+// Scroll Reveal Animation
+const reveals = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach(section => {
+        const windowHeight = window.innerHeight;
+        const sectionTop = section.getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if (sectionTop < windowHeight - revealPoint) {
+            section.classList.add("reveal", "active");
+        } else {
+            section.classList.remove("active");
+        }
+    });
+});
+
+// Skill hover sound effect (optional premium touch)
+document.querySelectorAll(".skills-list li").forEach(skill => {
+    skill.addEventListener("mouseenter", () => {
+        skill.style.boxShadow = "0 0 20px #38bdf8";
+    });
+    skill.addEventListener("mouseleave", () => {
+        skill.style.boxShadow = "none";
+    });
+});
+
+</script>
